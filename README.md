@@ -3,5 +3,7 @@ Grabs configuration of Cisco devices via SSH
 
 Dependencies: netmiko, python standard library
 
-add list of devices to backup to deviceList, seperated by new line
+add list of devices to backup to deviceList, seperated by new line \n
 run with python gatherRunning.py
+
+gatherRunning will iterate through the device list, scan for port 22, connect if it is open and save the config under configs
